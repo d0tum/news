@@ -1,4 +1,6 @@
-
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -13,11 +15,9 @@
 
 body {
   background-color: #A32323; /* Установите нужный цвет фона */
-  margin: 0; /* Уберите отступы по умолчанию */
-  padding: 0; /* Уберите внутренние отступы по умолчанию */
   font-family: Nyght serif dark, Sitka Small Semibold;
 }
-
+/* 
 .custom-text {
   color: #F7E8E8;
   font-size: 50px;
@@ -29,12 +29,16 @@ body {
 
 }
 .img{
-
-  justify-content: center;
-  align-items: center; 
-  margin: auto;
+  display: flex;
   border-radius: 30px;
-
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1170px;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 .buttons{
@@ -44,14 +48,75 @@ body {
 }
 
 .button{
-  color: #A32323;
-  background-color: #F7E8E8;
-  font-size: 45px;
+  color:#A32323;
+  background-color: #ededed;
+  text-decoration: #A32323;
+  font-size: 35px;
   font-family:Sitka Small Semibold;
   max-width: auto;
   text-align: center;
   margin: 40px;
   padding: 10px;
   border-radius: 15px;
-
 }
+
+.information{
+  display: grid;
+  grid-template-columns: 3fr 5fr;
+  gap: 10px; 
+  padding: 40px;
+  padding-right: 0;
+}
+
+.contacts{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px; 
+  padding: 40px;
+  padding-top: 100px;
+  align-items: center;
+  justify-items: center;
+}
+
+.inf-head{
+  display: flex;
+  color: #F7E8E8;
+  align-items: start;
+  font-size: 50px;
+  top: 0;
+  padding: 40px;
+  margin: auto;
+}
+
+.inf-text{
+  display: flex;
+  color: #F7E8E8;
+  align-items: start;
+  justify-content: center;
+  font-size: 18px;
+  font-family:Sitka Small Semibold;
+}
+
+.inf-pict{
+  display: flex;
+  justify-content: right;
+  padding-right: 70px;
+}
+
+.news {
+  display: grid;
+  display: flex;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 100px; 
+  padding: 50px;
+  padding-top: 200px;
+  justify-content: center; 
+  align-items: center; 
+  width: 100%;
+}
+
+.news-custom {
+  padding: 16px;
+  border-radius: 8px;
+  justify-content: center;
+} */

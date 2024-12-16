@@ -1,5 +1,5 @@
 generator client {
-  provider        = "prisma-client-js"
+  provider = "prisma-client-js"
 }
 
 datasource db {
@@ -8,10 +8,10 @@ datasource db {
 }
 
 model News {
-  id   Int @id @default(autoincrement())
-  title String @unique
-  date DateTime @db.Date
+  id      Int      @id @default(autoincrement())
+  title   String   @unique
+  date    DateTime @db.Date
   excerpt String
-  text String
-  image String
+  text    String
+  image   String ?
 }

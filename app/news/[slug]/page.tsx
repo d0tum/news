@@ -9,7 +9,7 @@ export default async function Page({params}: {params: {slug: string}}){
     return (
         <div className="grid grid-rows-[20px_1fr_20px] items-center justify">
             <main className="flex flex-col gap-8 row-start-2 items-centre">
-                <NewsComponent newsData={newsArray} />
+                <NewsComponent newsData = {newsArray} isOneNews={true}/>
             </main>
         </div>
     )
